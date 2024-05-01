@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Управління автомобілями</title>
+    <link
+      rel="stylesheet"
+      href="styles/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Управління власністю на автомобілі</h1>
+      <div class="person-form">
+        <input
+          type="text"
+          id="personName"
+          placeholder="Введіть ім'я" />
+        <input
+          type="number"
+          id="personAge"
+          placeholder="Введіть вік" />
+        <button onclick="addPerson()">Додати особу</button>
+      </div>
+      <div class="car-form">
+        <input
+          type="text"
+          id="carMake"
+          placeholder="Введіть марку авто" />
+        <input
+          type="text"
+          id="carModel"
+          placeholder="Введіть модель" />
+        <input
+          type="number"
+          id="carYear"
+          placeholder="Введіть рік випуску" />
+        <input
+          type="text"
+          id="carPlate"
+          placeholder="Введіть номерний знак" />
+        <button onclick="assignOwner()">Призначити власника</button>
+      </div>
+      <div id="output"></div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
